@@ -295,7 +295,7 @@ strong {
   background-color: white;
   padding: var(--space-xl) var(--space-lg);
   border-radius: 20px 20px 20px 0;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  
   font-family: var(--heading-font);
 }
 .feedback-card__dialog__title {
@@ -334,4 +334,25 @@ strong {
 /* FOOTER */
 footer {
   font-family: var(--heading-font);
+}
+
+.top-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+.top-header .container {
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+.top-header--white-background {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+.top-header--white-background path {
+  fill: var(--primary-color);
+  transition: fill 300ms ease-in-out;
 }
